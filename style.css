@@ -148,6 +148,7 @@ a, a:visited {
     justify-content: center;
     flex-direction: column;
     padding-bottom: .3em;
+    padding-top: .3em;
 }
 
 .inner-cont > img {
