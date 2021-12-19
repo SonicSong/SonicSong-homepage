@@ -149,14 +149,15 @@ a, a:visited {
     padding-top: .3em;
 }
 
+.main {
+    min-height: 100vh;
+}
+
 .inner-cont > img {
     padding-left: .1em;
     padding-right: .1em;
 }
 
-.main {
-    min-height: 100vh;
-}
 
 @media only screen and (max-width: 600px) {
     .list > div > svg {
