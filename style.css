@@ -7,8 +7,18 @@ body {
     font-family: "Rubik", sans-serif;
     color: white;
     background: #1f1f23;
-   overflow: auto;''
+    overflow: auto;
 }
+
+.main {
+    min-height: 100vh;
+    overflow-x:hidden;
+    width:100%;
+    position:relative;
+    top:7vh;
+    height:53vh;
+}
+
 
 .pfp {
     border-radius:50%;
@@ -73,7 +83,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 1em;
+    padding-bottom: .1em;
     padding-top: .5em;
 }
 
@@ -149,10 +159,6 @@ a, a:visited {
     padding-top: .3em;
 }
 
-.main {
-    min-height: 100vh;
-}
-
 .inner-cont > img {
     padding-left: .1em;
     padding-right: .1em;
@@ -190,4 +196,9 @@ a, a:visited {
         padding-top: .7em;
         padding-bottom: .5em;
     }
+
+    .dis {
+        transform: scale(0.90, 0.90) translate(-0.1%);
+    }
+
 }
