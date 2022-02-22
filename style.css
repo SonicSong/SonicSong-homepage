@@ -23,17 +23,6 @@ body {
     padding-bottom: .5em;
 }
 
-.list {
-    padding-bottom: 3em;
-}
-
-.list > img {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    padding: .3em;
-}
-
 .footer {
     align-items: center;
     background: #292d38;
@@ -136,54 +125,63 @@ a, a:visited {
     padding-top: .2em;
 }
 
-.inner-cont {
+.list {
+    padding-bottom: 3em;
     display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.list > img {
     align-items: center;
-    justify-content: center;
+    display: flex;
     flex-direction: row;
+    padding: .3em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+
 }
 
-.list > p {
-    font-size: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: .3em;
-    padding-top: .3em;
+.four-k {
+    display: none;
 }
 
-.inner-cont > img {
-    padding-left: .1em;
-    padding-right: .1em;
+@media only screen and (min-width: 2160px) {
+    .four-k {
+        display: block;
+    }
 }
 
+@media only screen and (max-width: 700px) {
+    .list {
+        padding-bottom: 3em;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    }
+}
 
 @media only screen and (max-width: 600px) {
-    .list > div > svg {
+    .list {
+        padding-bottom: 3em;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+    .list > img {
         transform: scale(0.9, 0.9)
     }
 
     .pfp {
         padding-bottom: 0.5em;
     }
-    .list > p {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 16px;
-    }
+
     .content {
         max-width: 56em;
-    }
-
-    .inner-cont {
-        padding-bottom: .4em;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .inner-cont > img {
-        padding-bottom: .1em;
-        padding-top: .1em;
     }
 
     .container {
