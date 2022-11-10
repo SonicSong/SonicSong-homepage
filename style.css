@@ -145,6 +145,10 @@ a, a:visited {
 }
 
 @media screen and (max-width: 600px) {
+    .footer {
+        padding-bottom: 2em;
+    }
+
     .tech {
         padding-top: 15em;
         text-align: center;
