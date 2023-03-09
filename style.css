@@ -82,6 +82,27 @@ body {
     text-align: center;
 }
 
+.services {
+    padding-top: 10em;
+    font-size: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.services-list {
+    padding-top: .5em;
+    display: inline-grid;
+    grid-template-columns: repeat(1, minmax(0,1fr));
+}
+
+.services-type {
+    padding-top: .5em;
+}
+
+.services-type > svg {
+    padding-top: 0.25em;
+}
+
 .soft {
     padding-top: .5em;
     display: inline-grid;
