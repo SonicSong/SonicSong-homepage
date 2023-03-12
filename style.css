@@ -92,7 +92,7 @@ body {
 .services-list {
     padding-top: .5em;
     display: inline-grid;
-    grid-template-columns: repeat(1, minmax(0,1fr));
+    grid-template-columns: repeat(2, minmax(0,1fr));
 }
 
 .services-type {
@@ -127,10 +127,22 @@ body {
     font-weight: bold;
 }
 
-.projects-txt {
+.projects{
     padding-top: 10em;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+    min-height: 100vh;
+}
+
+.projects-txt {
+    font-size: 20px;
+    text-align: left;
+}
+
+.projects-list {
+    padding-top: .5em;
+    display: inline-grid;
+    grid-template-columns: repeat(1, minmax(0,1fr));
 }
 
 a, a:visited {
