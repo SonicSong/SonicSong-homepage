@@ -99,6 +99,10 @@ body {
     padding-top: .5em;
 }
 
+.services-type-gig {
+    padding-top: .8em;
+}
+
 .services-type > svg {
     padding-top: 0.25em;
 }
